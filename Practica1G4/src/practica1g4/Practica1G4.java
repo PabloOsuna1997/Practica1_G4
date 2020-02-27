@@ -18,8 +18,8 @@ public class Practica1G4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //int numero = 11;
-        //esPrimo numeroPrimo = new esPrimo(numero);
+        int numero = 11;
+        esPrimo numeroPrimo = new esPrimo(numero);
 
     }
 
