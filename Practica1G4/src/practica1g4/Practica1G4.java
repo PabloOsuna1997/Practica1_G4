@@ -5,7 +5,7 @@
  */
 package practica1g4;
 
-import Discriminante.discriminante;
+import fDiscriminante.fdiscriminante;
 import NumeroPrimo.esPrimo;
 import PotenciaRaiz.Potencia;
 import PotenciaRaiz.Raiz;
@@ -23,11 +23,7 @@ public class Practica1G4 {
         // TODO code application logic here
         int numero = 11;
         esPrimo numeroPrimo = new esPrimo(numero);
-
-        // todo lo relacionado al Discriminante
-        discriminante dis = new discriminante();
-        dis.Operar(3, 1, -5);
-
+        
         // potencia y raiz
         Potencia pow = new Potencia();
         Raiz sqrt = new Raiz();
