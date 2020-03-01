@@ -62,7 +62,7 @@ public class discriminante {
     
     //FUNCION DEL VALOR ABSOLUTO
     public void valorAbsoluto(double numero){
-        
+        System.out.println("Numero: "+numero +", Valor Absoluto: " + calcularValAbs(numero));
     }
     
     public double calcularValAbs( double numero){

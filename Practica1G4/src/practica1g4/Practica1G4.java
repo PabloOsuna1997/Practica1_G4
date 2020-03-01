@@ -34,7 +34,8 @@ public class Practica1G4 {
         
         //--Funcion valor absoluto
         System.out.println(ANSI_RED + "======= FUNCION VALOR ABSOLUTO =======");
-        
+        dis.valorAbsoluto(015.156);
+        System.out.println();
         
         // potencia y raiz
         System.out.println(ANSI_RED + "======= FUNCION POTENCIA Y RAIZ =======");
