@@ -61,8 +61,12 @@ public class discriminante {
     
     
     //FUNCION DEL VALOR ABSOLUTO
-    public void valorAbsoluto(){
+    public void valorAbsoluto(double numero){
         
+    }
+    
+    public double calcularValAbs( double numero){
+        return numero > 0 ? numero : -numero;
     }
             
 }
