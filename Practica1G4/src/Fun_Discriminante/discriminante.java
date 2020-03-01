@@ -57,4 +57,16 @@ public class discriminante {
         x_2 = ((-b) - Math.sqrt(d)) / (2 * a);
         System.out.println(ANSI_GREEN + "\tX1 = " + x_1 + ANSI_RESET + ANSI_YELLOW + " \n\tX2 = " + x_2 + ANSI_RESET);
     }
+    
+    
+    
+    //FUNCION DEL VALOR ABSOLUTO
+    public void valorAbsoluto(double numero){
+        System.out.println("Valor Absoluto: |"+numero +"| = " + calcularValAbs(numero));
+    }
+    
+    public double calcularValAbs( double numero){
+        return numero > 0 ? numero : -numero;
+    }
+            
 }
