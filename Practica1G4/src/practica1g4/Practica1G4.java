@@ -23,11 +23,15 @@ public class Practica1G4 {
         // TODO code application logic here
         int numero = 11;
         esPrimo numeroPrimo = new esPrimo(numero);
+
+        // todo lo relacionado al Discriminante
+        fdiscriminante dis = new fdiscriminante();
+        dis.Operar(3, 1, -5);
         
         // potencia y raiz
         Potencia pow = new Potencia();
         Raiz sqrt = new Raiz();
-        
+
         pow.powAlCubo(numero);
         sqrt.sqrtAlCubo(numero);
     }
