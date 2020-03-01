@@ -5,11 +5,10 @@
  */
 package practica1g4;
 
-import fDiscriminante.fdiscriminante;
 import NumeroPrimo.esPrimo;
 import PotenciaRaiz.Potencia;
 import PotenciaRaiz.Raiz;
-
+import Fun_Discriminante.discriminante;
 /**
  *
  * @author juanp
@@ -24,10 +23,9 @@ public class Practica1G4 {
         int numero = 11;
         esPrimo numeroPrimo = new esPrimo(numero);
 
-        // todo lo relacionado al Discriminante
-        fdiscriminante dis = new fdiscriminante();
-        dis.Operar(3, 1, -5);
-        
+        // Funcion #2 Discriminante
+        discriminante dis = new discriminante();
+        dis.Operar(1, -1, -12);
         // potencia y raiz
         Potencia pow = new Potencia();
         Raiz sqrt = new Raiz();
