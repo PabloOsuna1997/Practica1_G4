@@ -32,6 +32,10 @@ public class Practica1G4 {
         dis.Operar(1, -1, -12);
         System.out.println();
         
+        //--Funcion valor absoluto
+        System.out.println(ANSI_RED + "======= FUNCION VALOR ABSOLUTO =======");
+        
+        
         // potencia y raiz
         System.out.println(ANSI_RED + "======= FUNCION POTENCIA Y RAIZ =======");
         Potencia pow = new Potencia();
