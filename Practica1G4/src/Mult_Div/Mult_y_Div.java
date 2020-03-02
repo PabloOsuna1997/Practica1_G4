@@ -13,9 +13,16 @@ public class Mult_y_Div {
     
     public Mult_y_Div(double numero1,double numero2){
      
-     
+        multiplicacion(numero1,numero2);
+       
     
     }
 
-  
+    private void multiplicacion(double numero1, double numero2) {
+       double resultado = numero1 * numero2;
+       
+        System.out.println("La multiplicacion de "+ numero1+"*"+numero2 +" es "+ resultado);
+    }
+
+ 
 }
