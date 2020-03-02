@@ -10,6 +10,7 @@ import PotenciaRaiz.Potencia;
 import PotenciaRaiz.Raiz;
 import Fun_Discriminante.discriminante;
 import static Fun_Discriminante.discriminante.ANSI_RED;
+import Mult_Div.Mult_y_Div;
 /**
  *
  * @author juanp
@@ -45,6 +46,9 @@ public class Practica1G4 {
         sqrt.sqrtAlCubo(numero);
         System.out.println();
         
+         System.out.println(ANSI_RED + "======= FUNCION MULTIPLICACION Y DIVISION =======");
+         Mult_y_Div op = new Mult_y_Div(20, 4);
+         System.out.println();
     }
 
 }
