@@ -47,7 +47,7 @@ public class Practica1G4 {
         System.out.println();
         
          System.out.println(ANSI_RED + "======= FUNCION MULTIPLICACION Y DIVISION =======");
-         Mult_y_Div op = new Mult_y_Div(20, 4);
+         Mult_y_Div op = new Mult_y_Div(20, 3);
          System.out.println();
     }
 
