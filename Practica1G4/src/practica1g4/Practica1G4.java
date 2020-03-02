@@ -10,6 +10,7 @@ import PotenciaRaiz.Potencia;
 import PotenciaRaiz.Raiz;
 import Fun_Discriminante.discriminante;
 import static Fun_Discriminante.discriminante.ANSI_RED;
+import Mult_Div.Mult_y_Div;
 /**
  *
  * @author juanp
@@ -44,6 +45,7 @@ public class Practica1G4 {
         pow.powAlCubo(numero);
         sqrt.sqrtAlCubo(numero);
         System.out.println();
+        
         
     }
 

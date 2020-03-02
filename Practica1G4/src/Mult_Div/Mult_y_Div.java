@@ -1,0 +1,21 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Mult_Div;
+
+/**
+ *
+ * @author hernandez
+ */
+public class Mult_y_Div {
+    
+    public Mult_y_Div(double numero1,double numero2){
+     
+     
+    
+    }
+
+  
+}
