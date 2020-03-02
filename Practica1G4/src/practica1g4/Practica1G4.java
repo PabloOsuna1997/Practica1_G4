@@ -42,12 +42,12 @@ public class Practica1G4 {
         System.out.println(ANSI_RED + "======= FUNCION POTENCIA Y RAIZ =======");
         Potencia pow = new Potencia();
         Raiz sqrt = new Raiz();
-        pow.powAlCubo(numero);
-        sqrt.sqrtAlCubo(numero);
+        pow.powAlCubo(0);
+        sqrt.sqrtAlCubo(0);
         System.out.println();
         
          System.out.println(ANSI_RED + "======= FUNCION MULTIPLICACION Y DIVISION =======");
-         Mult_y_Div op = new Mult_y_Div(20, 3);
+         Mult_y_Div op = new Mult_y_Div(0, 3);
          System.out.println();
     }
 
