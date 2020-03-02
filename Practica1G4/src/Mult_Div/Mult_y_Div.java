@@ -26,7 +26,12 @@ public class Mult_y_Div {
 
     private void divicion(double numero1, double numero2) {
          double resultado = numero1 / numero2;
+         if (numero2==0) {
+             System.out.println("No es posible dividir "+ numero1+"/"+numero2 +" forma indefinida ");
+        }else{
+          System.out.println("La Division de "+ numero1+"/"+numero2 +" es "+ resultado);
+         }
        
-        System.out.println("La Division de "+ numero1+"/"+numero2 +" es "+ resultado);
+       
     }
 }
