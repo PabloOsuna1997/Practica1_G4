@@ -29,7 +29,8 @@ public class esPrimo {
         } else {
             System.out.println(ANSI_BLUE + "y es impar." + ANSI_RESET);
         }
-
+        
+        // Funcion Extra 
         // Crea un rango del numero dado, con los numero primos - 201213283
         if (numero >= 0) {
             System.out.print(ANSI_GREEN + "\tLos numeros primos del rango de 1 a " + numero + " son: " + ANSI_RESET);

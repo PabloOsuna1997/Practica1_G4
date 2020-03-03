@@ -44,6 +44,7 @@ public class Practica1G4 {
         Raiz sqrt = new Raiz();
         pow.powAlCubo(9);
         sqrt.sqrtAlCubo(9);
+        sqrt.sqrtImg(-2);
         System.out.println();
         
          System.out.println(ANSI_RED + "======= FUNCION MULTIPLICACION Y DIVISION =======");

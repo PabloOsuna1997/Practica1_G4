@@ -42,7 +42,8 @@ public class discriminante {
     private double getValor(double a, double b, double c) {
         return ((b * b) - 4 * (a) * (c));
     }
-
+ 
+    // Funcion extra - 201213283
     public void cero(double d, double a, double b) {
         double r;
         double i;
@@ -51,8 +52,8 @@ public class discriminante {
         i = Math.sqrt(d * (-1)) / (2 * a);
 
         System.out.println(ANSI_RED + "\tSin soluciones reales" + ANSI_RESET);
-        System.out.println(ANSI_YELLOW + "\tRaiz Imaginaria 1" + (r * 1000d) / 1000d + "+" + (i * 1000d) / 1000d + "i" + ANSI_RESET);
-        System.out.println(ANSI_YELLOW + "\tRaiz Imaginaria 2" + (r * 1000d) / 1000d + "-" + (i * 1000d) / 1000d + "i" + ANSI_RESET);
+        System.out.println(ANSI_YELLOW + "\tRaiz Imaginaria 1: " + (r * 1000d) / 1000d + "+" + (i * 1000d) / 1000d + "i" + ANSI_RESET);
+        System.out.println(ANSI_YELLOW + "\tRaiz Imaginaria 2: " + (r * 1000d) / 1000d + "-" + (i * 1000d) / 1000d + "i" + ANSI_RESET);
 
     }
 
