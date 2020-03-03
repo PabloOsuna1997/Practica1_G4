@@ -13,6 +13,8 @@ public class esPrimo {
 
     public static final String ANSI_BLUE = "\u001B[34m";
     public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
 
     public esPrimo(int numero) {
         if (esPrimo(numero)) {
@@ -27,6 +29,21 @@ public class esPrimo {
         } else {
             System.out.println(ANSI_BLUE + "y es impar." + ANSI_RESET);
         }
+
+        // Crea un rango del numero dado, con los numero primos - 201213283
+        System.out.print(ANSI_GREEN + "\tLos numeros primos del rango de 1 a " + numero + " son: " + ANSI_RESET);
+        if (numero == 1) {
+            System.out.print(ANSI_YELLOW + "Primo Unico " + ANSI_RESET);
+        } else {
+            System.out.print(ANSI_YELLOW + "1, " + ANSI_RESET);
+            for (int i = 2; i <= numero; i++) {
+                if (esPrimo(i)) {
+                    System.out.print(ANSI_YELLOW + i + ", " + ANSI_RESET);
+                }
+            }
+        }
+
+        System.out.println("");
 
     }
 
