@@ -31,19 +31,23 @@ public class esPrimo {
         }
 
         // Crea un rango del numero dado, con los numero primos - 201213283
-        System.out.print(ANSI_GREEN + "\tLos numeros primos del rango de 1 a " + numero + " son: " + ANSI_RESET);
-        if (numero == 1) {
-            System.out.print(ANSI_YELLOW + "Primo Unico " + ANSI_RESET);
-        } else {
-            System.out.print(ANSI_YELLOW + "1, " + ANSI_RESET);
-            for (int i = 2; i <= numero; i++) {
-                if (esPrimo(i)) {
-                    System.out.print(ANSI_YELLOW + i + ", " + ANSI_RESET);
+        if (numero >= 0) {
+            System.out.print(ANSI_GREEN + "\tLos numeros primos del rango de 1 a " + numero + " son: " + ANSI_RESET);
+            if (numero == 1) {
+                System.out.print(ANSI_YELLOW + "Primo Unico " + ANSI_RESET);
+            } else {
+                System.out.print(ANSI_YELLOW + "1, " + ANSI_RESET);
+                for (int i = 2; i <= numero; i++) {
+                    if (esPrimo(i)) {
+                        System.out.print(ANSI_YELLOW + i + ", " + ANSI_RESET);
+                    }
                 }
             }
-        }
 
-        System.out.println("");
+            System.out.println("");
+        } else{
+            System.out.println(ANSI_YELLOW + "\tPor definicion, los numeros negativos no tiene numeros primos" + ANSI_RESET);
+        }
 
     }
 
