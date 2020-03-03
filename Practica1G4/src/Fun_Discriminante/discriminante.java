@@ -5,6 +5,10 @@
  */
 package Fun_Discriminante;
 
+import NumeroPrimo.esPrimo;
+
+import Mult_Div.*;
+
 /**
  *
  * @author Mario Morales
@@ -47,7 +51,10 @@ public class discriminante {
         double x_1;
         System.out.println(ANSI_CYAN + "Existe una sola solución para esta ecuacion." + ANSI_RESET);
         x_1 = (-b) / (2 * a);
-        System.out.println(ANSI_GREEN + "\tSolucion: X_1 = X_2: " + x_1 + ANSI_RESET);
+
+        System.out.print(ANSI_GREEN + "\tSolucion: X_1 = X_2: " + x_1 + ", Aproximacion:+" + (int) x_1 + "y " + ANSI_RESET);
+        esPrimo primo = new esPrimo((int) x_1);
+        System.out.println();
     }
 
     public void mayorCero(double d, double a, double b) {
@@ -55,18 +62,25 @@ public class discriminante {
         System.out.println(ANSI_CYAN + "Existen dos soluciones para esta Ecuacion: " + ANSI_RESET);
         x_1 = ((-b) + Math.sqrt(d)) / (2 * a);
         x_2 = ((-b) - Math.sqrt(d)) / (2 * a);
-        System.out.println(ANSI_GREEN + "\tX1 = " + x_1 + ANSI_RESET + ANSI_YELLOW + " \n\tX2 = " + x_2 + ANSI_RESET);
+
+        //INFORMACION DEL NUMERO SI ES PRIMO O NO Y SI ES IMPAR O NO - 201503911
+        System.out.print(ANSI_GREEN + "\tX1 = " + x_1 + ", Aproximacion: " + (int) x_1 + " y " + ANSI_RESET);
+        esPrimo primo = new esPrimo((int) x_1);
+        System.out.print(ANSI_YELLOW + " \n\tX2 = " + x_2 + ", Aproximacion: " + (int) x_1 + " y " + ANSI_RESET);
+        esPrimo primo2 = new esPrimo((int) x_2);
+        System.out.println();
     }
-    
-    
-    
+
     //FUNCION DEL VALOR ABSOLUTO
-    public void valorAbsoluto(double numero){
-        System.out.println("Valor Absoluto: |"+numero +"| = " + calcularValAbs(numero));
+    public void valorAbsoluto(double numero) {
+        System.out.println("Valor Absoluto: |" + numero + "| = " + calcularValAbs(numero));
+        System.out.println("Tambien se pueden hacer operaciones dentro del valor absoluto:");       //funcion extra: 201503911
+        Mult_y_Div multi = new Mult_y_Div();
+        System.out.println(" -> Valor Absoluto: |-2*3| = " + calcularValAbs(multi.multiplicacion1(-2, 3)));
     }
-    
-    public double calcularValAbs( double numero){
+
+    public double calcularValAbs(double numero) {
         return numero > 0 ? numero : -numero;
     }
-            
+
 }
