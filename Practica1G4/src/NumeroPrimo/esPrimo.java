@@ -11,12 +11,21 @@ package NumeroPrimo;
  */
 public class esPrimo {
 
+    public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_RESET = "\u001B[0m";
+
     public esPrimo(int numero) {
         if (esPrimo(numero)) {
-            System.out.println("El numero: " + numero + " es un numero primo.");
-            return;
+            System.out.print(ANSI_BLUE + "El numero: " + numero + " es un numero primo " + ANSI_RESET);
+
         } else {
-            System.out.println("El numero: " + numero + " No es un numero primo.");
+            System.out.print(ANSI_BLUE + "El numero: " + numero + " No es un numero primo " + ANSI_RESET);
+        }
+
+        if (numero % 2 == 0) {              //verifica si el numero es para o impar - 201503911
+            System.out.println(ANSI_BLUE + "y el número es par." + ANSI_RESET);
+        } else {
+            System.out.println(ANSI_BLUE + "y el número es impar." + ANSI_RESET);
         }
 
     }
