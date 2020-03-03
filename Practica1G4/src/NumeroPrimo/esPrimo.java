@@ -19,13 +19,13 @@ public class esPrimo {
             System.out.print(ANSI_BLUE + "El numero: " + numero + " es un numero primo " + ANSI_RESET);
 
         } else {
-            System.out.print(ANSI_BLUE + "El numero: " + numero + " No es un numero primo " + ANSI_RESET);
+            System.out.print(ANSI_BLUE + "El numero: " + numero + " es un numero compuesto " + ANSI_RESET);
         }
 
         if (numero % 2 == 0) {              //verifica si el numero es para o impar - 201503911
-            System.out.println(ANSI_BLUE + "y el número es par." + ANSI_RESET);
+            System.out.println(ANSI_BLUE + "y es par." + ANSI_RESET);
         } else {
-            System.out.println(ANSI_BLUE + "y el número es impar." + ANSI_RESET);
+            System.out.println(ANSI_BLUE + "y es impar." + ANSI_RESET);
         }
 
     }
@@ -39,6 +39,7 @@ public class esPrimo {
             }
             contador++;
         }
+        System.out.println(contador);
         return primo;
     }
 }
