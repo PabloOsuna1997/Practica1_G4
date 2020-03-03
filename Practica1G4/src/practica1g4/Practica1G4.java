@@ -23,14 +23,14 @@ public class Practica1G4 {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println(ANSI_RED + "======= FUNCION PRIMO =======");
-        int numero = 8;
+        int numero = 11;
         esPrimo numeroPrimo = new esPrimo(numero);
         System.out.println();
 
         // Funcion #2 Discriminante
         System.out.println(ANSI_RED + "======= FUNCION DISCRIMINANTE =======");
         discriminante dis = new discriminante();
-        dis.Operar(1, -1, -12);
+        dis.Operar(2, -2, 5);
         System.out.println();
         
         //--Funcion valor absoluto
@@ -44,6 +44,7 @@ public class Practica1G4 {
         Raiz sqrt = new Raiz();
         pow.powAlCubo(9);
         sqrt.sqrtAlCubo(9);
+        sqrt.sqrtImg(-2);
         System.out.println();
         
          System.out.println(ANSI_RED + "======= FUNCION MULTIPLICACION Y DIVISION =======");

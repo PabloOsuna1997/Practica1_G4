@@ -28,7 +28,7 @@ public class discriminante {
         discriminante = getValor(a, b, c);
 
         if (discriminante < 0) {
-            cero();
+            cero(discriminante, a, b);
         }
         if (discriminante == 0) {
             igualCero(a, b);
@@ -42,9 +42,19 @@ public class discriminante {
     private double getValor(double a, double b, double c) {
         return ((b * b) - 4 * (a) * (c));
     }
+ 
+    // Funcion extra - 201213283
+    public void cero(double d, double a, double b) {
+        double r;
+        double i;
 
-    public void cero() {
-        System.out.println(ANSI_RED + "Sin soluciones reales" + ANSI_RESET);
+        r = ((-b) / (2 * a));
+        i = Math.sqrt(d * (-1)) / (2 * a);
+
+        System.out.println(ANSI_RED + "\tSin soluciones reales" + ANSI_RESET);
+        System.out.println(ANSI_YELLOW + "\tRaiz Imaginaria 1: " + (r * 1000d) / 1000d + "+" + (i * 1000d) / 1000d + "i" + ANSI_RESET);
+        System.out.println(ANSI_YELLOW + "\tRaiz Imaginaria 2: " + (r * 1000d) / 1000d + "-" + (i * 1000d) / 1000d + "i" + ANSI_RESET);
+
     }
 
     public void igualCero(double a, double b) {
@@ -73,14 +83,14 @@ public class discriminante {
 
     //FUNCION DEL VALOR ABSOLUTO
     public void valorAbsoluto(double numero) {
-        System.out.println(ANSI_BLUE +"Valor Absoluto: |" + numero + "| = " + calcularValAbs(numero));
+        System.out.println(ANSI_BLUE + "Valor Absoluto: |" + numero + "| = " + calcularValAbs(numero));
         System.out.println("\nTambien se pueden hacer operaciones dentro del valor absoluto:");       //funcion extra: 201503911
-        
+
         //Valores a multuplicar
         Mult_y_Div multi = new Mult_y_Div();
         int a = -2;
         int b = 3;
-        System.out.println(ANSI_RESET +" ->"+ ANSI_BLUE +" Valor Absoluto de : | "+ a +"*"+b +"| = " + calcularValAbs(multi.multiplicacion1(a, b)) + ANSI_RESET);
+        System.out.println(ANSI_RESET + " ->" + ANSI_BLUE + " Valor Absoluto de : | " + a + "*" + b + "| = " + calcularValAbs(multi.multiplicacion1(a, b)) + ANSI_RESET);
     }
 
     public double calcularValAbs(double numero) {
