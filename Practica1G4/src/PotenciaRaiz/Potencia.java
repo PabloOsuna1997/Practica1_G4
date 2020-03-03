@@ -32,4 +32,18 @@ public class Potencia {
             System.out.println("El numero 0 elevado a cualquier potencia siempre da como resultado 0.");
         }
     }
+    
+    /**
+     * potencia en forma recursiva 201325583
+     * @param base
+     * @param exp
+     * @return 
+     */
+    public int pow(int base, int exp)
+    {
+        if(exp == 0)
+            return 1;
+        else
+            return base * pow(base, exp-1);
+    }
 }
