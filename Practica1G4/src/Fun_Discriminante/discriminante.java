@@ -66,7 +66,7 @@ public class discriminante {
         //INFORMACION DEL NUMERO SI ES PRIMO O NO Y SI ES IMPAR O NO - 201503911
         System.out.print(ANSI_GREEN + "\tX1 = " + x_1 + ", Aproximacion: " + (int) x_1 + " y " + ANSI_RESET);
         esPrimo primo = new esPrimo((int) x_1);
-        System.out.print(ANSI_YELLOW + " \n\tX2 = " + x_2 + ", Aproximacion: " + (int) x_1 + " y " + ANSI_RESET);
+        System.out.print(ANSI_YELLOW + " \n\tX2 = " + x_2 + ", Aproximacion: " + (int) x_2 + " y " + ANSI_RESET);
         esPrimo primo2 = new esPrimo((int) x_2);
         System.out.println();
     }

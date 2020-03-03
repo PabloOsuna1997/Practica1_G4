@@ -39,7 +39,6 @@ public class esPrimo {
             }
             contador++;
         }
-        System.out.println(contador);
         return primo;
     }
 }
