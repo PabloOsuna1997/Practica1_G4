@@ -30,7 +30,7 @@ public class Practica1G4 {
         // Funcion #2 Discriminante
         System.out.println(ANSI_RED + "======= FUNCION DISCRIMINANTE =======");
         discriminante dis = new discriminante();
-        dis.Operar(1, -1, -12);
+        dis.Operar(2, -2, 5);
         System.out.println();
         
         //--Funcion valor absoluto
