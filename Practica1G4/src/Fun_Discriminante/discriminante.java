@@ -66,17 +66,21 @@ public class discriminante {
         //INFORMACION DEL NUMERO SI ES PRIMO O NO Y SI ES IMPAR O NO - 201503911
         System.out.print(ANSI_GREEN + "\tX1 = " + x_1 + ", Aproximacion: " + (int) x_1 + " y " + ANSI_RESET);
         esPrimo primo = new esPrimo((int) x_1);
-        System.out.print(ANSI_YELLOW + " \n\tX2 = " + x_2 + ", Aproximacion: " + (int) x_1 + " y " + ANSI_RESET);
+        System.out.print(ANSI_YELLOW + " \n\tX2 = " + x_2 + ", Aproximacion: " + (int) x_2 + " y " + ANSI_RESET);
         esPrimo primo2 = new esPrimo((int) x_2);
         System.out.println();
     }
 
     //FUNCION DEL VALOR ABSOLUTO
     public void valorAbsoluto(double numero) {
-        System.out.println("Valor Absoluto: |" + numero + "| = " + calcularValAbs(numero));
-        System.out.println("Tambien se pueden hacer operaciones dentro del valor absoluto:");       //funcion extra: 201503911
+        System.out.println(ANSI_BLUE +"Valor Absoluto: |" + numero + "| = " + calcularValAbs(numero));
+        System.out.println("\nTambien se pueden hacer operaciones dentro del valor absoluto:");       //funcion extra: 201503911
+        
+        //Valores a multuplicar
         Mult_y_Div multi = new Mult_y_Div();
-        System.out.println(" -> Valor Absoluto: |-2*3| = " + calcularValAbs(multi.multiplicacion1(-2, 3)));
+        int a = -2;
+        int b = 3;
+        System.out.println(ANSI_RESET +" ->"+ ANSI_BLUE +" Valor Absoluto de : | "+ a +"*"+b +"| = " + calcularValAbs(multi.multiplicacion1(a, b)) + ANSI_RESET);
     }
 
     public double calcularValAbs(double numero) {

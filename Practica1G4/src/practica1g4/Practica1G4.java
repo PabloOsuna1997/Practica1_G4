@@ -23,7 +23,7 @@ public class Practica1G4 {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println(ANSI_RED + "======= FUNCION PRIMO =======");
-        int numero = 11;
+        int numero = 8;
         esPrimo numeroPrimo = new esPrimo(numero);
         System.out.println();
 
@@ -42,12 +42,12 @@ public class Practica1G4 {
         System.out.println(ANSI_RED + "======= FUNCION POTENCIA Y RAIZ =======");
         Potencia pow = new Potencia();
         Raiz sqrt = new Raiz();
-        pow.powAlCubo(0);
-        sqrt.sqrtAlCubo(0);
+        pow.powAlCubo(9);
+        sqrt.sqrtAlCubo(9);
         System.out.println();
         
          System.out.println(ANSI_RED + "======= FUNCION MULTIPLICACION Y DIVISION =======");
-         Mult_y_Div op = new Mult_y_Div(0, 3);
+         Mult_y_Div op = new Mult_y_Div(8.25, 3.25);
          System.out.println();
     }
 
