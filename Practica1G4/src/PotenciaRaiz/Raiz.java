@@ -25,6 +25,7 @@ public class Raiz {
      */
     public double sqrt(double base, double exp) {
         return Math.pow(base, 1 / exp);
+
     }
 
     /**
@@ -33,8 +34,15 @@ public class Raiz {
     public void sqrtAlCubo(double num) {
         DecimalFormat df = new DecimalFormat("#.0000");
         if (num != 0) {                                       //si el numero es 0 siempre dara como resultado el cero. - 201503911
-            double sqrt = this.sqrt(num, 3);
-            System.out.println("Raiz cubica de " + num + ": " + df.format(sqrt));
+            if (num < 0) {
+                 double sqrt = this.sqrt(num*-1, 3);
+                 sqrt = sqrt*-1;
+                System.out.println("Raiz cubica de " + num + ": " + df.format(sqrt));
+            } else {
+                double sqrt = this.sqrt(num, 3);
+                System.out.println("Raiz cubica de " + num + ": " + df.format(sqrt));
+            }
+
         } else {
             System.out.println("Cualquiera Raiz aplicada al numero 0  siempre da como resultado 0");
         }
@@ -48,9 +56,9 @@ public class Raiz {
      */
     public void sqrtImg(double num) {
         double i;
-         DecimalFormat df = new DecimalFormat("#.000");
+        DecimalFormat df = new DecimalFormat("#.000");
         i = Math.sqrt(num * (-1));
-        System.out.println(ANSI_YELLOW + "\tRaiz Imaginaria 1: " + df.format(i) + "i"+ ANSI_RESET);
-        System.out.println(ANSI_YELLOW + "\tRaiz Imaginaria 2: -" + df.format(i) + "i"+ ANSI_RESET);
+        System.out.println(ANSI_YELLOW + "\tRaiz Imaginaria 1: " + df.format(i) + "i" + ANSI_RESET);
+        System.out.println(ANSI_YELLOW + "\tRaiz Imaginaria 2: -" + df.format(i) + "i" + ANSI_RESET);
     }
 }
