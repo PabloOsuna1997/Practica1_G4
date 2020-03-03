@@ -46,7 +46,8 @@ public class Practica1G4 {
         
         pow.powEntero(9, -0.3);
         pow.powEntero(5, -6);
-        sqrt.sqrtAlCubo(9);
+        sqrt.sqrtAlCubo(-8.3);
+         sqrt.sqrtAlCubo(5);
         sqrt.sqrtImg(-2);
         System.out.println();
         
