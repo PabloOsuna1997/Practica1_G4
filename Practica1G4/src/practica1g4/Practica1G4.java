@@ -43,6 +43,7 @@ public class Practica1G4 {
         Potencia pow = new Potencia();
         Raiz sqrt = new Raiz();
         pow.powAlCubo(9);
+        pow.powEntero(9, 3);
         sqrt.sqrtAlCubo(9);
         sqrt.sqrtImg(-2);
         System.out.println();
