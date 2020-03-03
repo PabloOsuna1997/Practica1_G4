@@ -42,8 +42,8 @@ public class Practica1G4 {
         System.out.println(ANSI_RED + "======= FUNCION POTENCIA Y RAIZ =======");
         Potencia pow = new Potencia();
         Raiz sqrt = new Raiz();
-        pow.powAlCubo(0);
-        sqrt.sqrtAlCubo(0);
+        pow.powAlCubo(9);
+        sqrt.sqrtAlCubo(9);
         System.out.println();
         
          System.out.println(ANSI_RED + "======= FUNCION MULTIPLICACION Y DIVISION =======");
