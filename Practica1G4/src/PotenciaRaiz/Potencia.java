@@ -6,6 +6,8 @@
 
 package PotenciaRaiz;
 
+import static NumeroPrimo.esPrimo.ANSI_YELLOW;
+
 /**
  *
  * @author Jhona
@@ -45,5 +47,11 @@ public class Potencia {
             return 1;
         else
             return base * pow(base, exp-1);
+    }
+    
+    public void powEntero(int base, int exp)
+    {
+        int res = pow(base, exp);
+        System.out.println(ANSI_YELLOW + "Potencia (" + base + "^" + exp + ") = " + res);
     }
 }
