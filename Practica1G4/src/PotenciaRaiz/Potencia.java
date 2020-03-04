@@ -12,14 +12,6 @@ import static NumeroPrimo.esPrimo.ANSI_YELLOW;
  * @author Jhona
  */
 public class Potencia {
-<<<<<<< HEAD
-    /**
-     * @param base numero base
-     * @param exp  numbero exponente
-     * @return
-     */
-    public double pow(double base, double exp) {
-=======
 
     /**
      * @param base numero base
@@ -28,7 +20,6 @@ public class Potencia {
      */
     public double pow(double base, double exp) {
         
->>>>>>> release/1.4.25
         return Math.pow(base, exp);
     }
 
@@ -36,19 +27,12 @@ public class Potencia {
      * @param num numero para realizar la potencia
      */
     public void powAlCubo(double num) {
-<<<<<<< HEAD
-       
-=======
-
->>>>>>> release/1.4.25
         if (num != 0) {                             //validacion para no hacer una potencia al numero 0 -  201503911
             double pow = this.pow(num, 3);
             System.out.println("Potencia al cubo de " + num + ": " + pow);
         } else {
             System.out.println("El numero 0 elevado a cualquier potencia siempre da como resultado 0.");
         }
-<<<<<<< HEAD
-=======
     }
 
     /**
@@ -75,6 +59,5 @@ public class Potencia {
         }
         System.out.println(ANSI_YELLOW + "Potencia (" + base + "^" + exp + ") = " + res);
 
->>>>>>> release/1.4.25
     }
 }
