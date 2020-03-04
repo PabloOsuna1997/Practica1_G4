@@ -24,12 +24,7 @@ public class esPrimo {
             System.out.print(ANSI_BLUE + "El numero: " + numero + " es un numero compuesto " + ANSI_RESET);
         }
 
-        if (numero % 2 == 0) {              //verifica si el numero es para o impar - 201503911
-            System.out.println(ANSI_BLUE + "y es par." + ANSI_RESET);
-        } else {
-            System.out.println(ANSI_BLUE + "y es impar." + ANSI_RESET);
-        }
-        
+         esPar(numero);     //llamar al metodo para determinar si es par o no el numero 
         // Funcion Extra 
         // Crea un rango del numero dado, con los numero primos - 201213283
         if (numero >= 0) {
@@ -46,10 +41,9 @@ public class esPrimo {
             }
 
             System.out.println("");
-        } else{
+        } else {
             System.out.println(ANSI_YELLOW + "\tPor definicion, los numeros negativos no tiene numeros primos" + ANSI_RESET);
         }
-
     }
 
     public static boolean esPrimo(int numero) {
@@ -62,5 +56,13 @@ public class esPrimo {
             contador++;
         }
         return primo;
+    }
+
+    public void esPar(int numero) {
+        if (numero % 2 == 0) {              //verifica si el numero es para o impar - 201503911
+            System.out.println(ANSI_BLUE + "y es par." + ANSI_RESET);
+        } else {
+            System.out.println(ANSI_BLUE + "y es impar." + ANSI_RESET);
+        }
     }
 }
