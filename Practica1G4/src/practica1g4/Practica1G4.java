@@ -11,6 +11,7 @@ import PotenciaRaiz.Raiz;
 import Fun_Discriminante.discriminante;
 import static Fun_Discriminante.discriminante.ANSI_RED;
 import Mult_Div.Mult_y_Div;
+import java.util.Scanner;
 /**
  *
  * @author juanp
@@ -21,6 +22,9 @@ public class Practica1G4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        
+        
         // TODO code application logic here
         System.out.println(ANSI_RED + "======= FUNCION PRIMO =======");
         int numero = 11;
@@ -34,9 +38,8 @@ public class Practica1G4 {
         System.out.println();
         
         //--Funcion valor absoluto
-        System.out.println(ANSI_RED + "======= FUNCION VALOR ABSOLUTO =======");
-        dis.valorAbsoluto(015.156);
-        System.out.println();
+        System.out.println(ANSI_RED + "======= FUNCION VALOR ABSOLUTO =======");        
+        dis.menuValorAbsoluto();
         
         // potencia y raiz
         System.out.println(ANSI_RED + "======= FUNCION POTENCIA Y RAIZ =======");

@@ -8,6 +8,7 @@ package Fun_Discriminante;
 import NumeroPrimo.esPrimo;
 
 import Mult_Div.*;
+import java.util.Scanner;
 
 /**
  *
@@ -82,6 +83,35 @@ public class discriminante {
     }
 
     //FUNCION DEL VALOR ABSOLUTO
+    public void menuValorAbsoluto(){
+        boolean bandera = true;
+        double numeroValorAbs;
+        Scanner reader = new Scanner(System.in);
+        int continuar = 2;
+        
+        while(bandera == true){
+            System.out.print("Ingrese un numero para calcular el valor absoluto del mismo: " );
+            numeroValorAbs = reader.nextDouble();
+            valorAbsoluto(numeroValorAbs);
+            
+            while(true){
+                System.out.print(ANSI_YELLOW + " \n ¿Desea probar con otro numero? 0(no)/1(si): " + ANSI_RESET );
+                continuar = reader.nextInt();
+                if(continuar ==0){
+                    bandera = false; 
+                    break;
+                }
+                else if(continuar == 1)
+                    break;
+                else
+                    System.out.println("Ingrese un valor valido" );
+            }
+            
+            
+        }
+        
+    }
+    
     public void valorAbsoluto(double numero) {
         System.out.println(ANSI_BLUE + "Valor Absoluto: |" + numero + "| = " + calcularValAbs(numero));
         System.out.println("\nTambien se pueden hacer operaciones dentro del valor absoluto:");       //funcion extra: 201503911
