@@ -95,7 +95,7 @@ public class discriminante {
             valorAbsoluto(numeroValorAbs);
             
             while(true){
-                System.out.print(ANSI_YELLOW + " \n ¿Desea probar con otro numero? 0(no)/1(si): " + ANSI_RESET );
+                System.out.print(ANSI_GREEN + " \n ¿Desea probar con otro numero? 0(no)/1(si): " + ANSI_RESET );
                 continuar = reader.nextInt();
                 if(continuar ==0){
                     bandera = false; 
@@ -104,10 +104,8 @@ public class discriminante {
                 else if(continuar == 1)
                     break;
                 else
-                    System.out.println("Ingrese un valor valido" );
-            }
-            
-            
+                    System.out.println( ANSI_RED + "Ingrese un valor valido"  + ANSI_RESET);
+            }   
         }
         
     }
