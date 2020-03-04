@@ -13,14 +13,26 @@ public class esPrimo {
 
     public static final String ANSI_BLUE = "\u001B[34m";
     public static final String ANSI_RESET = "\u001B[0m";
+<<<<<<< HEAD
+=======
     public static final String ANSI_GREEN = "\u001B[32m";
     public static final String ANSI_YELLOW = "\u001B[33m";
+>>>>>>> release/1.4.25
 
     public esPrimo(int numero) {
         if (esPrimo(numero)) {
             System.out.print(ANSI_BLUE + "El numero: " + numero + " es un numero primo " + ANSI_RESET);
 
         } else {
+<<<<<<< HEAD
+            System.out.print(ANSI_BLUE + "El numero: " + numero + " No es un numero primo " + ANSI_RESET);
+        }
+
+        if (numero % 2 == 0) {              //verifica si el numero es para o impar - 201503911
+            System.out.println(ANSI_BLUE + "y el número es par." + ANSI_RESET);
+        } else {
+            System.out.println(ANSI_BLUE + "y el número es impar." + ANSI_RESET);
+=======
             System.out.print(ANSI_BLUE + "El numero: " + numero + " es un numero compuesto " + ANSI_RESET);
         }
 
@@ -48,6 +60,7 @@ public class esPrimo {
             System.out.println("");
         } else{
             System.out.println(ANSI_YELLOW + "\tPor definicion, los numeros negativos no tiene numeros primos" + ANSI_RESET);
+>>>>>>> release/1.4.25
         }
 
     }
