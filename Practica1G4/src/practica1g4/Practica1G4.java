@@ -40,8 +40,10 @@ public class Practica1G4 {
 
         // Funcion #2 Discriminante
         System.out.println(ANSI_RED + "======= FUNCION DISCRIMINANTE =======");
+        
         discriminante dis = new discriminante();
         dis.Operar(8, -30, 7);
+        
         if (discriminante.activador == 1) {
             //Creando la ventana y el plano de dibujo
             Ventana frame = new Ventana();
@@ -61,7 +63,7 @@ public class Practica1G4 {
 
             frame.setVisible(true);
         }
-
+        // si no existen soluciones reales el programa continua
         System.out.println();
 
         //--Funcion valor absoluto
