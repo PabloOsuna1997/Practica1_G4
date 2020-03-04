@@ -8,6 +8,7 @@ package Fun_Discriminante;
 import NumeroPrimo.esPrimo;
 
 import Mult_Div.*;
+import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -22,7 +23,9 @@ public class discriminante {
     public static final String ANSI_BLUE = "\u001B[34m";
     public static final String ANSI_CYAN = "\u001B[36m";
     public static final String ANSI_RESET = "\u001B[0m";
-
+    
+    public static double a_1, b_2, c_3;
+    public static int activador = 0;
     public void Operar(double a, double b, double c) {
 
         double discriminante;
@@ -36,12 +39,15 @@ public class discriminante {
         }
 
         if (discriminante > 0) {
+            activador = 1;
             mayorCero(discriminante, a, b);
         }
     }
 
     private double getValor(double a, double b, double c) {
+        c_3 = c;
         return ((b * b) - 4 * (a) * (c));
+        
     }
 
     // Funcion extra - 201213283
@@ -73,13 +79,16 @@ public class discriminante {
         System.out.println(ANSI_CYAN + "Existen dos soluciones para esta Ecuacion: " + ANSI_RESET);
         x_1 = ((-b) + Math.sqrt(d)) / (2 * a);
         x_2 = ((-b) - Math.sqrt(d)) / (2 * a);
+        
 
         //INFORMACION DEL NUMERO SI ES PRIMO O NO Y SI ES IMPAR O NO - 201503911
         System.out.print(ANSI_GREEN + "\tX1 = " + x_1 + ", Aproximacion: " + (int) x_1 + " y " + ANSI_RESET);
         esPrimo primo = new esPrimo((int) x_1);
         System.out.print(ANSI_YELLOW + " \n\tX2 = " + x_2 + ", Aproximacion: " + (int) x_2 + " y " + ANSI_RESET);
         esPrimo primo2 = new esPrimo((int) x_2);
-        System.out.println();
+        a_1 = a;
+        b_2 = b;
+                System.out.println();
     }
 
     //FUNCION DEL VALOR ABSOLUTO
