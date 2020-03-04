@@ -60,9 +60,9 @@ public class esPrimo {
 
     public void esPar(int numero) {
         if (numero % 2 == 0) {              //verifica si el numero es para o impar - 201503911
-            System.out.println(ANSI_BLUE + "y es par." + ANSI_RESET);
+            System.out.println(ANSI_BLUE + "y es un numero par." + ANSI_RESET);
         } else {
-            System.out.println(ANSI_BLUE + "y es impar." + ANSI_RESET);
+            System.out.println(ANSI_BLUE + "y es un numero impar." + ANSI_RESET);
         }
     }
 }
