@@ -27,12 +27,12 @@ public class Mult_y_Div {
         double resultado = numero1 * numero2;
 
         System.out.println("La multiplicacion de " + numero1 + "*" + numero2 + " es " + resultado);
-        lista="";
+        lista = "";
         primos_divisibles_extactos(resultado, 1);
-        if (lista=="") {
-            lista="No tiene";
+        if (lista == "") {
+            lista = "No tiene";
         }
-        System.out.println(" Sus numeros divisibles exactos son "+ lista);
+        System.out.println(" Sus numeros divisibles exactos de la multiplicacion son " + lista);
         if (numero1 == 0 || numero2 == 0) {     //funcion extra: 201503911
             System.out.println(" -> toda multiplicacion con el numero 0 dara como resultado 0.");
         }
@@ -59,6 +59,13 @@ public class Mult_y_Div {
             } else {
                 System.out.println();
                 System.out.println("La Division de " + numero1 + "/" + numero2 + " es " + resultado);
+                lista = "";
+                primos_divisibles_extactos(resultado, 1);
+                if (lista == "") {
+                    lista = "No tiene";
+                }
+                System.out.println(" Sus numeros divisibles exactos de la division son " + lista);
+
             }
         } else {      //201503911
             System.out.println();
@@ -69,14 +76,14 @@ public class Mult_y_Div {
     String lista;
 
     public String primos_divisibles_extactos(double numero, int contador) {
-        if (contador>numero) {
+        if (contador > numero) {
             return lista;
         }
         double temp = numero / contador;
-        System.out.println(" ---   " +temp%2);
+
         if (temp % 2 == 1) {
 
-            lista += contador;
+            lista += contador + ",";
             contador = contador + 2;
             return primos_divisibles_extactos(numero, contador);
         } else {

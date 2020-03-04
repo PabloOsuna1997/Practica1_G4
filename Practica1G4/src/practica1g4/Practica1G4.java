@@ -68,7 +68,7 @@ public class Practica1G4 {
 
         //--Funcion valor absoluto
         System.out.println(ANSI_RED + "======= FUNCION VALOR ABSOLUTO =======");
-       // dis.menuValorAbsoluto();
+         dis.menuValorAbsoluto();
 
         // potencia y raiz
         System.out.println(ANSI_RED + "======= FUNCION POTENCIA Y RAIZ =======");
@@ -84,7 +84,7 @@ public class Practica1G4 {
         System.out.println();
 
         System.out.println(ANSI_RED + "======= FUNCION MULTIPLICACION Y DIVISION =======");
-        Mult_y_Div op = new Mult_y_Div(9, 5);
+        Mult_y_Div op = new Mult_y_Div(45, 3);
         System.out.println(ANSI_RED + ">>>>>>>>>>>>\t\t\n\nFin Funciones, se puede cerrar las ventanas" + Raiz.ANSI_RESET);
 
     }
