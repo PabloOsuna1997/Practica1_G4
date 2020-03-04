@@ -75,9 +75,9 @@ public class Practica1G4 {
         Potencia pow = new Potencia();
         Raiz sqrt = new Raiz();
         pow.powAlCubo(9);
-
         pow.powEntero(9, -0.3);
         pow.powEntero(5, -6);
+        pow.descomponerPotencia10(1025236);
         sqrt.sqrtAlCubo(-8.3);
         sqrt.sqrtAlCubo(5);
         sqrt.sqrtImg(-2);

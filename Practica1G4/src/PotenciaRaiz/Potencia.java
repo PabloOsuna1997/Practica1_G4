@@ -5,6 +5,8 @@
  */
 package PotenciaRaiz;
 
+import static NumeroPrimo.esPrimo.ANSI_BLUE;
+import static NumeroPrimo.esPrimo.ANSI_GREEN;
 import static NumeroPrimo.esPrimo.ANSI_YELLOW;
 
 /**
@@ -59,5 +61,21 @@ public class Potencia {
         }
         System.out.println(ANSI_YELLOW + "Potencia (" + base + "^" + exp + ") = " + res);
 
+    }
+    
+    /**
+     * Funcion extra 201325583
+     * @param num 
+     */
+    public void descomponerPotencia10(int num)
+    {
+        String val = String.valueOf(num);
+        int potencia = 0;
+        String cad = "";
+        for (int i = val.length()-1; i >= 0; i--) {
+            cad = val.charAt(i) + "*10^" + potencia + " " + cad;
+            potencia ++;
+        }
+        System.out.println(ANSI_GREEN + "Descomposicion Potencia de 10 de (" + val + ") = " + cad);
     }
 }
