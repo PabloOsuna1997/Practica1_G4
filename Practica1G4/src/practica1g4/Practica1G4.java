@@ -30,7 +30,7 @@ public class Practica1G4 {
         // Funcion #2 Discriminante
         System.out.println(ANSI_RED + "======= FUNCION DISCRIMINANTE =======");
         discriminante dis = new discriminante();
-        dis.Operar(1, -1, -12);
+        dis.Operar(2, -2, 5);
         System.out.println();
         
         //--Funcion valor absoluto
@@ -42,12 +42,26 @@ public class Practica1G4 {
         System.out.println(ANSI_RED + "======= FUNCION POTENCIA Y RAIZ =======");
         Potencia pow = new Potencia();
         Raiz sqrt = new Raiz();
+<<<<<<< HEAD
         pow.powAlCubo(0);
         sqrt.sqrtAlCubo(0);
         System.out.println();
         
          System.out.println(ANSI_RED + "======= FUNCION MULTIPLICACION Y DIVISION =======");
          Mult_y_Div op = new Mult_y_Div(0, 3);
+=======
+        pow.powAlCubo(9);
+        
+        pow.powEntero(9, -0.3);
+        pow.powEntero(5, -6);
+        sqrt.sqrtAlCubo(-8.3);
+         sqrt.sqrtAlCubo(5);
+        sqrt.sqrtImg(-2);
+        System.out.println();
+        
+         System.out.println(ANSI_RED + "======= FUNCION MULTIPLICACION Y DIVISION =======");
+         Mult_y_Div op = new Mult_y_Div(8.25, 3.25);
+>>>>>>> release/1.4.25
          System.out.println();
     }
 

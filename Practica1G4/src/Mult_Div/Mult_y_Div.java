@@ -5,12 +5,19 @@
  */
 package Mult_Div;
 
+import java.text.DecimalFormat;
+
 /**
  *
  * @author hernandez
  */
 public class Mult_y_Div {
 
+<<<<<<< HEAD
+=======
+    
+    
+>>>>>>> release/1.4.25
     public Mult_y_Div() {
     }
 
@@ -32,9 +39,16 @@ public class Mult_y_Div {
     }
 
     public double multiplicacion1(double numero1, double numero2) {
+<<<<<<< HEAD
         double resultado = numero1 * numero2;
 
         System.out.print("La multiplicacion de " + numero1 + "*" + numero2 + " es " + resultado);
+=======
+        double resultado = (numero1 * numero2);
+        DecimalFormat df = new DecimalFormat("#.0000");
+        
+        System.out.print("La multiplicacion de " + numero1 + "*" + numero2 + " es " + df.format(resultado));
+>>>>>>> release/1.4.25
 
         if (numero1 == 0 || numero2 == 0) {     //funcion extra: 201503911
             System.out.println(" -> toda multiplicacion con el numero 0 dara como resultado 0.");
