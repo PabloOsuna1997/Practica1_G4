@@ -8,6 +8,7 @@ package Fun_Discriminante;
 import NumeroPrimo.esPrimo;
 
 import Mult_Div.*;
+import java.util.Scanner;
 
 /**
  *
@@ -42,7 +43,7 @@ public class discriminante {
     private double getValor(double a, double b, double c) {
         return ((b * b) - 4 * (a) * (c));
     }
- 
+
     // Funcion extra - 201213283
     public void cero(double d, double a, double b) {
         double r;
@@ -82,15 +83,49 @@ public class discriminante {
     }
 
     //FUNCION DEL VALOR ABSOLUTO
-    public void valorAbsoluto(double numero) {
-        System.out.println(ANSI_BLUE + "Valor Absoluto: |" + numero + "| = " + calcularValAbs(numero));
-        System.out.println("\nTambien se pueden hacer operaciones dentro del valor absoluto:");       //funcion extra: 201503911
+    public void menuValorAbsoluto() {
+        boolean bandera = true;
+        double numeroValorAbs;
+        Scanner reader = new Scanner(System.in);
+        int continuar = 2;
 
+        while (bandera == true) {
+            System.out.print("Ingrese un numero para calcular el valor absoluto del mismo: ");
+            numeroValorAbs = reader.nextDouble();
+            valorAbsoluto(numeroValorAbs);
+
+            while (true) {
+                System.out.print(ANSI_GREEN + " \n ¿Desea probar con otro numero? 0(no)/1(si): " + ANSI_RESET);
+                continuar = reader.nextInt();
+                if (continuar == 0) {
+                    bandera = false;
+                    break;
+                } else if (continuar == 1) {
+                    break;
+                } else {
+                    System.out.println(ANSI_RED + "Ingrese un valor valido" + ANSI_RESET);
+                }
+            }
+        }
+
+        //----FIN DEL VALOR ABSOLUTO
+        System.out.println("\nTambien se pueden hacer operaciones dentro del valor absoluto\npor ejemplo:");       //funcion extra: 201503911
         //Valores a multuplicar
         Mult_y_Div multi = new Mult_y_Div();
         int a = -2;
         int b = 3;
         System.out.println(ANSI_RESET + " ->" + ANSI_BLUE + " Valor Absoluto de : | " + a + "*" + b + "| = " + calcularValAbs(multi.multiplicacion1(a, b)) + ANSI_RESET);
+        System.out.println(ANSI_RED +"\nHA CULMINADO LA FUNCION VALOR ABSOLUTO" + ANSI_RESET);
+        //Hago la pausa de 3 segundo
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+        }
+        
+    }
+
+    public void valorAbsoluto(double numero) {
+        System.out.println(ANSI_BLUE + "Valor Absoluto: |" + numero + "| = " + calcularValAbs(numero));
     }
 
     public double calcularValAbs(double numero) {
