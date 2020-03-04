@@ -31,17 +31,6 @@ public class Raiz {
     /**
      * @param num numero para realizar la raiz
      */
-<<<<<<< HEAD
-    public void sqrtAlCubo(double num)
-    {
-        if(num != 0){                                       //si el numero es 0 siempre dara como resultado el cero. - 201503911
-            double sqrt = this.sqrt(num, 3);
-            System.out.println("Raiz cubica de " + num + ": " + sqrt);
-        }else{
-            System.out.println("Cualquiera Raiz aplicada al numero 0  siempre da como resultado 0");
-        }
-        
-=======
     public void sqrtAlCubo(double num) {
         DecimalFormat df = new DecimalFormat("#.0000");
         if (num != 0) {                                       //si el numero es 0 siempre dara como resultado el cero. - 201503911
@@ -71,6 +60,5 @@ public class Raiz {
         i = Math.sqrt(num * (-1));
         System.out.println(ANSI_YELLOW + "\tRaiz Imaginaria 1: " + df.format(i) + "i" + ANSI_RESET);
         System.out.println(ANSI_YELLOW + "\tRaiz Imaginaria 2: -" + df.format(i) + "i" + ANSI_RESET);
->>>>>>> release/1.4.25
     }
 }
