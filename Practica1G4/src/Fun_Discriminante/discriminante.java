@@ -8,6 +8,7 @@ package Fun_Discriminante;
 import NumeroPrimo.esPrimo;
 
 import Mult_Div.*;
+import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -23,6 +24,9 @@ public class discriminante {
     public static final String ANSI_CYAN = "\u001B[36m";
     public static final String ANSI_RESET = "\u001B[0m";
 
+    public static double a_1, b_2, c_3;
+    public static int activador = 0;
+
     public void Operar(double a, double b, double c) {
 
         double discriminante;
@@ -36,12 +40,16 @@ public class discriminante {
         }
 
         if (discriminante > 0) {
+            // Indico que se graficara la funcion ingresada
+            activador = 1;
             mayorCero(discriminante, a, b);
         }
     }
 
     private double getValor(double a, double b, double c) {
+        c_3 = c;
         return ((b * b) - 4 * (a) * (c));
+
     }
 
     // Funcion extra - 201213283
@@ -79,6 +87,8 @@ public class discriminante {
         esPrimo primo = new esPrimo((int) x_1);
         System.out.print(ANSI_YELLOW + " \n\tX2 = " + x_2 + ", Aproximacion: " + (int) x_2 + " y " + ANSI_RESET);
         esPrimo primo2 = new esPrimo((int) x_2);
+        a_1 = a;
+        b_2 = b;
         System.out.println();
     }
 
@@ -115,13 +125,13 @@ public class discriminante {
         int a = -2;
         int b = 3;
         System.out.println(ANSI_RESET + " ->" + ANSI_BLUE + " Valor Absoluto de : | " + a + "*" + b + "| = " + calcularValAbs(multi.multiplicacion1(a, b)) + ANSI_RESET);
-        System.out.println(ANSI_RED +"\nHA CULMINADO LA FUNCION VALOR ABSOLUTO" + ANSI_RESET);
+        System.out.println(ANSI_RED + "\nHA CULMINADO LA FUNCION VALOR ABSOLUTO" + ANSI_RESET);
         //Hago la pausa de 3 segundo
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
         }
-        
+
     }
 
     public void valorAbsoluto(double numero) {
