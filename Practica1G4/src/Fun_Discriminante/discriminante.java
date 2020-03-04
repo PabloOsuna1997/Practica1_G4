@@ -108,9 +108,17 @@ public class discriminante {
             }
         }
 
+        //----FIN DEL VALOR ABSOLUTO
+        System.out.println("\nTambien se pueden hacer operaciones dentro del valor absoluto\npor ejemplo:");       //funcion extra: 201503911
+        //Valores a multuplicar
+        Mult_y_Div multi = new Mult_y_Div();
+        int a = -2;
+        int b = 3;
+        System.out.println(ANSI_RESET + " ->" + ANSI_BLUE + " Valor Absoluto de : | " + a + "*" + b + "| = " + calcularValAbs(multi.multiplicacion1(a, b)) + ANSI_RESET);
+        System.out.println(ANSI_RED +"\nHA CULMINADO LA FUNCION VALOR ABSOLUTO" + ANSI_RESET);
         //Hago la pausa de 3 segundo
         try {
-            Thread.sleep(3000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
         }
         
@@ -118,12 +126,6 @@ public class discriminante {
 
     public void valorAbsoluto(double numero) {
         System.out.println(ANSI_BLUE + "Valor Absoluto: |" + numero + "| = " + calcularValAbs(numero));
-        System.out.println("\nTambien se pueden hacer operaciones dentro del valor absoluto:");       //funcion extra: 201503911
-        //Valores a multuplicar
-        Mult_y_Div multi = new Mult_y_Div();
-        int a = -2;
-        int b = 3;
-        System.out.println(ANSI_RESET + " ->" + ANSI_BLUE + " Valor Absoluto de : | " + a + "*" + b + "| = " + calcularValAbs(multi.multiplicacion1(a, b)) + ANSI_RESET);
     }
 
     public double calcularValAbs(double numero) {
