@@ -24,11 +24,11 @@ public class esPrimo {
             System.out.print(ANSI_BLUE + "El numero: " + numero + " es un numero compuesto " + ANSI_RESET);
         }
 
-         esPar(numero);     //llamar al metodo para determinar si es par o no el numero 
+        esPar(numero);     //llamar al metodo para determinar si es par o no el numero 
         // Funcion Extra 
         // Crea un rango del numero dado, con los numero primos - 201213283
         if (numero >= 0) {
-            System.out.print(ANSI_GREEN + "\tLos numeros primos del rango de 1 a " + numero + " son: " + ANSI_RESET);
+            System.out.print(ANSI_GREEN + "\tExisten: "+cantidadPrimos(numero)+" de numeros primos en el rango de 1 a " + numero + " y estos son: " + ANSI_RESET);
             if (numero == 1) {
                 System.out.print(ANSI_YELLOW + "Primo Unico " + ANSI_RESET);
             } else {
@@ -64,5 +64,15 @@ public class esPrimo {
         } else {
             System.out.println(ANSI_BLUE + "y es un numero impar." + ANSI_RESET);
         }
+    }
+
+    public int cantidadPrimos(int numero) {
+        int contador = 1;
+        for (int i = 2; i <= numero; i++) {
+            if (esPrimo(i)) {
+                contador++;
+            }
+        }
+        return contador;    //retorna la cantidad de numeros primos que hay hasta llegar al numero indicado - 201503911
     }
 }
