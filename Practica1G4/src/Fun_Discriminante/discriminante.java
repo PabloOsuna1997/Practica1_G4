@@ -28,7 +28,7 @@ public class discriminante {
     public static int activador = 0;
 
     public void Operar(double a, double b, double c) {
-
+        System.out.println("mensaje de juan pablo osuna de leon - 201503911");
         double discriminante;
         discriminante = getValor(a, b, c);
 
