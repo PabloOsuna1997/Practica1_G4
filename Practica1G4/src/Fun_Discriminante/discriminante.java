@@ -63,6 +63,7 @@ public class discriminante {
         System.out.println(ANSI_RED + "\tSin soluciones reales" + ANSI_RESET);
         System.out.println(ANSI_YELLOW + "\tRaiz Imaginaria 1: " + (r * 1000d) / 1000d + "+" + (i * 1000d) / 1000d + "i" + ANSI_RESET);
         System.out.println(ANSI_YELLOW + "\tRaiz Imaginaria 2: " + (r * 1000d) / 1000d + "-" + (i * 1000d) / 1000d + "i" + ANSI_RESET);
+        System.out.println("La suma de los valores no se mostrara porque son imaginarias" );
 
     }
 
@@ -72,6 +73,8 @@ public class discriminante {
         x_1 = (-b) / (2 * a);
 
         System.out.print(ANSI_GREEN + "\tSolucion: X_1 = X_2: " + x_1 + ", Aproximacion:+" + (int) x_1 + "y " + ANSI_RESET);
+        double suma = (x_1 + x_1);
+        System.out.println("La suma del valor con el mismo es: " + suma );
         esPrimo primo = new esPrimo((int) x_1);
         System.out.println();
     }
@@ -86,6 +89,8 @@ public class discriminante {
         System.out.print(ANSI_GREEN + "\tX1 = " + x_1 + ", Aproximacion: " + (int) x_1 + " y " + ANSI_RESET);
         esPrimo primo = new esPrimo((int) x_1);
         System.out.print(ANSI_YELLOW + " \n\tX2 = " + x_2 + ", Aproximacion: " + (int) x_2 + " y " + ANSI_RESET);
+        double suma = (x_2 + x_1);
+        System.out.println("La suma de los valores encontrados son: " + suma );
         esPrimo primo2 = new esPrimo((int) x_2);
         a_1 = a;
         b_2 = b;
