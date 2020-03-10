@@ -94,6 +94,10 @@ public class discriminante {
 
     //FUNCION DEL VALOR ABSOLUTO
     public void menuValorAbsoluto() {
+       
+        System.out.println("Este es un cambio del la bugfix del 4.4");
+        
+        
         boolean bandera = true;
         double numeroValorAbs;
         Scanner reader = new Scanner(System.in);
