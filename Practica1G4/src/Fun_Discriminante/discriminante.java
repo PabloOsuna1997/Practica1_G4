@@ -26,6 +26,10 @@ public class discriminante {
 
     public static double a_1, b_2, c_3;
     public static int activador = 0;
+    
+    public void printJhonny() {
+        System.out.println("Jhonatan Lopez - 201325583");
+    }
 
     public void Operar(double a, double b, double c) {
         System.out.println("mensaje de juan pablo osuna de leon - 201503911");
@@ -33,14 +37,25 @@ public class discriminante {
         discriminante = getValor(a, b, c);
 
         if (discriminante < 0) {
+            /*
+              si alguna vez se grafica, cambio de valor, porque no lo necesita
+              será una función con resultado imaginario
+             */
+            activador = 0;
             cero(discriminante, a, b);
         }
         if (discriminante == 0) {
+            /*
+             No debo activar la variable activdor, puesto que no hay grafica que mostrar.
+            */
+            activador = 0;
             igualCero(a, b);
         }
 
         if (discriminante > 0) {
-            // Indico que se graficara la funcion ingresada
+           /*
+            cambio de valor activdaor, indicará que la grafica debe mostrarse.
+            */
             activador = 1;
             mayorCero(discriminante, a, b);
         }
@@ -56,8 +71,15 @@ public class discriminante {
     public void cero(double d, double a, double b) {
         double r;
         double i;
-
+        System.out.println(ANSI_YELLOW + "\t\tPasos del calculo de r" + ANSI_RESET);
+        System.out.println(ANSI_YELLOW + "\t\t(-b) " + (-b) + ANSI_RESET);
+        System.out.println(ANSI_YELLOW + "\t\t2 * a " + (2 * a) + ANSI_RESET);
         r = ((-b) / (2 * a));
+        
+        System.out.println(ANSI_YELLOW + "\t\tPasos del calculo de i " + ANSI_RESET);
+        System.out.println(ANSI_YELLOW + "\t\t calculo discriminante " + d + ANSI_RESET);
+        System.out.println(ANSI_YELLOW + "\t\t2 * a" + (2 * a) + ANSI_RESET);
+        
         i = Math.sqrt(d * (-1)) / (2 * a);
 
         System.out.println(ANSI_RED + "\tSin soluciones reales" + ANSI_RESET);
