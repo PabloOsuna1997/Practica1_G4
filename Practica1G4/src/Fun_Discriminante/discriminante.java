@@ -26,6 +26,10 @@ public class discriminante {
 
     public static double a_1, b_2, c_3;
     public static int activador = 0;
+    
+    public void printJhonny() {
+        System.out.println("Jhonatan Lopez - 201325583");
+    }
 
     public void Operar(double a, double b, double c) {
 
