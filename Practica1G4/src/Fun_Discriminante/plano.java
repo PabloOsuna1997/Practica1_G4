@@ -17,6 +17,7 @@ import javax.swing.JPanel;
 public class plano extends JPanel {
 
     public plano() {
+        System.out.println("comentario de juan pablo osuna de leon - 201503911");
         init();
     }
 
